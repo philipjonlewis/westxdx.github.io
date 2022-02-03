@@ -1,0 +1,1 @@
+(()=>{"use strict";document.querySelector(".index-button").addEventListener("click",(()=>{console.log("This is from index js")}))})();
