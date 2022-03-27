@@ -1,0 +1,1 @@
+document.querySelector(".about-button").addEventListener("click",(function(){console.log("This is from about js")}));

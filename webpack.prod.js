@@ -51,7 +51,7 @@ module.exports = merge(common, {
             plugins: [
               ["gifsicle", { interlaced: true }],
               ["jpegtran", { progressive: true }],
-              ["optipng", { optimizationLevel: 5 }],
+              ["optipng", { optimizationLevel: 3 }],
             ],
           },
         },
@@ -87,22 +87,15 @@ module.exports = merge(common, {
           },
         },
       },
-      // {
-      //   test: /\.(s(a|c)ss)$/,
-      //   use: [
-      //     MiniCssExtractPlugin.loader, //3. Extract css into files
-      //     "css-loader", //2. Turns css into commonjs
-      //     "sass-loader", //1. Turns sass into css
-      //   ],
-      // },
       {
         test: /\.(s(a|c)ss)$/,
         use: [
-          "style-loader", //3. Inject styles into DOM
+          MiniCssExtractPlugin.loader, //3. Extract css into files
           "css-loader", //2. Turns css into commonjs
           "sass-loader", //1. Turns sass into css
         ],
       },
+
       {
         test: /\.svg$/,
         use: [
