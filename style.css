@@ -120,9 +120,8 @@ body {
 
   background-image: url("./westxdx.png");
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
-  background-position: center center;
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 ol,
 ul {
@@ -146,4 +145,17 @@ table {
 
 img {
   height: 32rem;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+svg {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
