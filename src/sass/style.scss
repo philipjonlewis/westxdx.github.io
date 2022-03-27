@@ -1,0 +1,23 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: white;
+  background-image: url("../assets/wxdx_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+svg {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
