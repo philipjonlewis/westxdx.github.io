@@ -5,3 +5,6 @@ const indexBtn = document.querySelector(".index-button");
 indexBtn.addEventListener("click", () => {
   console.log("This is from index js");
 });
+
+const westLogo = document.querySelector(".w-icon");
+
